@@ -39,8 +39,11 @@ app.get('/auth/google/callback',
     res.redirect('/success');
   });
 app.get('/success', function(req, res){
-  res.render('success', { profile : pass.profile });
+  //req.session.passport.user;
+  //data = JSON.stringify(req.session.passport.user);
+  res.render('success', {profile:req.session.passport.user});
   //res.render('success')
+
   console.log('Authentication successful');
 });
 
