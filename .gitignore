@@ -1,2 +1,5 @@
 .env.dev
+<<<<<<< HEAD
 google_auth_error.txt
+=======
+>>>>>>> 4142dfbaf45720f7cacbf573645013ea458ec525
